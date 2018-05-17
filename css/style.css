@@ -1,0 +1,317 @@
+/*Universal attributes*/
+* {
+	font-family: helvetica;
+}	
+
+body {
+	margin: 0;
+	padding: 0;
+	 /* overflow-y can also be scroll */
+  	overflow-y: scroll;
+  	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+}
+
+p { 
+	line-height: 1.7em;
+	font-size: 18px;
+	text-align: justify;
+}
+
+ul {
+	list-style-type: none;
+	text-decoration: none;
+}
+
+h1, h3, h4 {
+	background: red; 
+	padding: 5px;
+	font-weight: bold;
+	color: black;
+	border-radius: 5px;
+	opacity: 0.65;
+}
+
+/*Navigation*/
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;	
+}
+
+nav {
+	display: none;
+}
+
+nav ul {
+	padding-left: 0;
+	margin: 0;
+}
+
+nav ul li {
+	width: 22%;
+}
+
+
+nav ul li:nth-child(2) {
+	margin-left: -10px;
+	margin-right: 5px;
+}
+
+nav ul li:nth-child(4) {
+	margin-left: 15px;
+}
+
+#nav-menu {
+	position: absolute;
+}
+
+#menu {
+	margin-right: 10px;
+	height: 20px;
+	width: 5%;
+}
+
+.arrow {
+	position: fixed;
+    bottom: 15px;
+    right: 10px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+	height: 20px;
+	width: 10%;
+}
+
+.show-menu {
+	width: 100%;
+	margin-top: 42.5px;
+	display: inline-block;
+}
+
+.show-menu li {
+	display: inline-block;
+	text-align: center;
+}
+
+#logo {
+	width: 52%;
+	height: auto;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+/*Slide show animation*/
+/*Referenced from w3Schools*/
+.slide-show-container {
+	position: relative;
+	margin-top: 25px;  		
+}
+
+.slide-show {
+	display: none;
+	margin: 0;
+}
+
+.slide-show img {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+}
+
+figcaption {
+	box-sizing: border-box;
+	border-radius: 5px;
+	padding: 0.25em;
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-size: 24px;
+}
+
+/*Content body*/
+section {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.section-position {
+	margin-top: 30px;
+}
+
+.section-position h2 {
+	text-align: center;
+} 
+
+.flex-api {
+	width: 90%;
+	margin-top: 10%;
+	margin-bottom: 5%;
+}
+
+label {
+	font-weight: bold;
+	margin-top: 1%;
+}
+
+#search-form{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+#flickrQuery {
+	margin-left: 2%;
+	margin-right: 2%;
+	width: 30%;
+}
+
+#submit{
+  background-color: #404040;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  width: 70px;
+  text-align: center;
+  color: #fff;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  font-size: 1em;
+}
+
+#results{
+	display: inline-block;
+	padding-bottom: 7.5px;
+}
+
+#results img {
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+} 
+
+
+#container {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 20px;
+	text-align: center;	
+}
+
+article {
+	border-bottom: 1px dashed black;
+	margin-bottom: 20px;
+}
+
+#align-headings {
+	text-align: center;
+}
+
+.flex-column {
+	display: block;
+	margin-top: 30px;
+}
+
+.flex-column article {
+	padding: 15px;
+}
+
+.flex-column article h2 {
+	text-align: center;
+}
+
+.placeholder img {
+	width: 100%;
+	height: auto;
+}
+
+/*Footer section*/
+footer {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	background: #e2e2e2;
+	width: 100%;
+}
+
+#nav-footer {
+	display: block;
+}
+
+.footer-item ul li {
+	margin-right: 5%;
+	width: 12%;
+}
+
+.footer-item p {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 0;
+}
+
+.footer-item {
+	height: 120px;
+}
+
+.footer-one nav ul {
+	display: inline-flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: 12px;
+	margin-left: -1.5%;
+}
+
+.footer-one nav ul li {
+	width: 100%;	
+	text-align: center;
+}
+
+.footer-one nav ul li:hover {
+	border: 0;
+}
+
+.footer-one nav ul li:nth-child(4) {
+	margin-right: 0;
+}
+
+.footer-one nav ul li:nth-child(3) {
+	margin-right: 0;
+}
+
+.footer-one nav ul li:nth-child(2) {
+	margin-right: 20px;
+}
+
+.footer-one p {
+	margin-top: 10px;
+}
+
+.footer-two ul {	
+	display: inline-flex;
+	justify-content: center;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.footer-two img {
+	height: 30px;
+	width: 100%;
+	margin: 0;
+}
+
+.footer-two p {
+	margin-top: 30px;
+}
